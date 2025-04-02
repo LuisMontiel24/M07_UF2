@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Bienvenido, {{ user.nombre_completo }}</h2>
+<p>Has iniciado sesión como {{ user.email }}</p>
+<a href="{% url 'logout' %}">Cerrar sesión</a>
+{% endblock %}
